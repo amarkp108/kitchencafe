@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 86px;
+   position: fixed;
+    width: 100%;
+}
+.nav::before{
+    content: "";
+    background: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+.logo img{
+    width: 115px;
+}
+.navbar{
+    display: flex;
+
+}
+.navbar li{
+    list-style: none;
+    padding: 25px;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    color: white;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+}
+.content{
+    display: flex;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background: url(images/main.png) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.text{
+    color: white;
+    margin: 200px 100px;
+    width: 100%;
+
+}
+ h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+
+}
+.center{
+    width: 500px;
+    padding-left: 60px;
+}
+.center p{
+    margin-top: 15px;
+}
+.btn{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.menu{
+    display: flex;
+    background: #000;
+    margin-top: 30px;
+
+}
+.menu-image{
+   
+    border: 3px solid rgb(13, 13, 9);
+    color: white;
+    text-align: center;
+    
+}
+.menu-image img{
+    width: 350px;
+    padding: 12px;
+    
+}
+.about{
+    width: 100%;
+    margin-top: 18px;
+    
+}
+.about-center{
+    /* width: 1420px; */
+    
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    background: #000;
+    color: white;
+}
+.wrap{
+    margin: auto;
+    width: 527px;
+}
+.wrap h2{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap p{
+    line-height: 22px;
+}
+.menu-image h2{
+    padding-top: 17px;
+    color: white;
+    text-align: center;
+}
+.menu-image p{
+    text-align: center;
+    padding: 5px 20px 0px 20px;
+}
+.menu-image.btn {
+    padding: 5px;
+    margin-top: 10px;
+}
+.gallery-images img{
+    width: 200px;
+}
+.gallery {
+    background-image: url(images/bg-image.jpg);
+    font-family: 'Poppins', sans-serif;
+   
+}
+.gallery h1{
+    padding-top: 40px;
+    text-align: center;
+}
+.gallery-images{
+   
+    margin: auto;
+    width: 1200px;
+    margin-top: 25px;
+}
+.gallery-images img{
+    width: 380px;
+    
+}
+.gallery-images img:hover{
+    width: 385px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact{
+    background-image: url(images/bg-image.jpg);
+    color: white;
+    height: 435px;
+}
+.contact h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    
+}
+.hr{
+    width: 100%;
+    height: 0.5px;
+    background: grey;
+    
+}
+.form-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact input{
+    background: transparent;
+    color: white;
+    width: 500px;
+    padding: 20px 0px 0px 0px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+textarea{
+    background: transparent;
+    color: white;
+    margin-top: 8px;
+    font-size: 16px;
+}
+.main-2{
+    background: url(images/bg-image.jpg);
+    padding-top: 90px;
+    height: 84vh;
+}
+.book_table{
+    width: 120vh;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: #1b1a1a;
+}
+.book_table h1{
+    margin-top: 20px;
+}
+.grey{
+    width: 50vh;
+    margin: auto;
+}
+label{
+    color: white;
+    padding: 20px;
+}
+form{
+    padding: 8px;
+    padding-top: 20px;
+    color: white;
+}
+.book_table input{
+    padding: 6px;
+    margin-top: 10px;
+    background: #524747;
+    font-weight: bold;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+.button-2{
+
+    width: 130px;
+    margin: auto;
+}
+hr{
+    margin-top: 10px;
+}
+.h4{
+    width: 150px;
+    margin: auto;
+    padding-top: 10px;
+    
+    
+}
+.h4 h4{
+    font-size: 20px;
+} 
+.booking input{
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.btn3{
+    width: 130px;
+    margin: auto;
+}
+
+
+
+
+    

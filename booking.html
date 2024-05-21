@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Book Your Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="booking.html">BOOK TABLE</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACTS</a></li>
+        </ul>
+    </header>
+    <div class="main-2">
+        <div class="book_table">
+            <div class="grey"><h1>Book Table</h1></div>
+            <form id="booking-form" action="http://localhost:3002/book-table" method="post">
+                <label for="Dinners">Dinners</label>
+                <input type="number" id="Dinners" name="Dinners">
+                <label for="Date">Date</label>
+                <input type="Date" id="Date" name="Date">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time">
+                <br>
+                <div class="button-2">
+                    <button type="submit" class="btn avail-btn">Check Availability</button>
+                </div>
+                <hr>
+                <div class="booking">
+                    <div class="h4"><h4>Fill the details</h4></div>
+                    <label for="f-name"><input type="text" name="f-name" id="f-name" placeholder="First Name"></label>
+                    <label for="l-name"><input type="text" name="l-name" id="l-name" placeholder="Last Name"></label>
+                    <label for="mobile"><input type="number" name="mobile" id="mobile" placeholder="Phone Number"></label>
+                    <label for="email"><input type="email" name="email" id="email" placeholder="Email"></label>
+                    <div class="btn3"><button class="btn">Confirm Booking</button></div>
+                </div>
+            </form>
+            <div id="confirmation-message" style="display: none;">
+                Your booking is confirmed.
+            </div>
+        </div>
+    </div>
+    <footer">
+    <p style="text-align: center; background: black; color: white;">Copyright <span>&copy</span> Kitchen Cafe & Restro 2024. All rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const formData = new FormData(this);
+
+            fetch('http://localhost:3002/book-table', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server
+                console.log(data);
+                document.getElementById('confirmation-message').style.display = 'block'; // Show the confirmation message
+                document.querySelector('button.btn').disabled = true; // Disable the button to prevent multiple submissions
+            })
+            .catch(error => {
+    console.error('Error:', error);
+    alert('An error occurred. Please try again. Details: ' + error); // Show a more detailed error message
+});
+
+        });
+    </script>
+
+</body>
+</html>
