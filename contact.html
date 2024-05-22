@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kitchen Cafe & Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            padding-top: 100px;
+            text-align: center;
+            color: #fffefe;
+        }
+        .contact-info, .contact-form, .social-media {
+            margin: 20px 0;
+        }
+        .contact-info p, .social-media a {
+            margin: 5px 0;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .social-media a {
+            text-decoration: none;
+            color: #333;
+        }
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="booking.html">BOOK TABLE</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACTS</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p><strong>Address:</strong></p>
+            <p>123 Flavor Street<br>
+            Samalkha Town, Panipat City, Zip 132101</p>
+            <p><strong>Phone:</strong></p>
+            <p>(+91) 9507687225</p>
+            <p><strong>Email:</strong></p>
+            <p>amarkp108@gmail.com</p>
+            <p><strong>Opening Hours:</strong></p>
+            <p>Monday to Friday: 8:00 AM - 10:00 PM<br>
+            Saturday and Sunday: 9:00 AM - 11:00 PM</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <p>Stay connected with us through our social media channels for updates, promotions, and more!</p>
+            <p ><a style="color: white; font-weight: bold;" href="#">Facebook</a> | <a style="color: white; font-weight: bold;" href="#">Instagram</a> | <a style="color: white; font-weight: bold;" href="#">Twitter</a></p>
+        </div>
+
+        <div class="map">
+            <h2>Directions</h2>
+            <p>Find us on the map below and plan your visit. We look forward to serving you!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27996.54567253731!2d76.99226797448473!3d29.240147665043764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dc6018e7f421f%3A0x7523ff575254283c!2sSamalkha%2C%20Haryana%20132101!5e1!3m2!1sen!2sin!4v1716366076548!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>
